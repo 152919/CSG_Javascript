@@ -11,7 +11,7 @@ function setup() {
 function draw() {
   background('lavender');
   fill('black');
-  text("mouseX:" + round(mouseX) + " mouseY:" + round(mouseY),10,20);
+  text("xJOS:" + xJOS + " yJOS:" + yJOS,10,20);
   
   // text("xJOS:" + xJOS + " yJOS:" + yJOS,300,20);
   
@@ -38,7 +38,8 @@ function draw() {
   pop();
   // einde tekenen JOS
   
-  // xJOS--;
+  xJOS--;
+  yJOS -= 2;
   // yJOS -= 2;
   
 }
