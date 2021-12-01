@@ -5,10 +5,22 @@ function setup() {
   //noLoop();
 }
 
-function draw() {
+function TekenKerk(){
   noStroke();
-  fill('steelblue');
-  ellipse(0,0,800);
-  fill('deepskyblue');
-  ellipse(450,450,400);
+  rect(0,350,75,100);
+  fill('green');
+  triangle(0,350,75,350,37,210);
+  fill('blue');
+  translate(100,0);
+  
 }
+
+function draw(){
+  TekenKerk();
+  TekenKerk();
+  TekenKerk();
+}
+
+
+
+
