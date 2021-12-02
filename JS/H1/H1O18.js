@@ -1,4 +1,4 @@
-var xPositie = 0;
+var xPositie = 1;
 var yPositie = 30;
 var schaal = 0.25;
 
@@ -11,13 +11,16 @@ function setup() {
 }
 
 function draw() {
-  background(0,0,75,1);
-  tekenSter(xPositie,yPositie);
+  background(0,0,75,0.1);
+  tekenSter(xPositie,yPositie,schaal);
+  yPositie++;
+  xPositie += 5;
+  schaal += 0.05;
 }
 
-function tekenSter(x,y) {
+function tekenSter(x,y,s) {
   push();
-  scale(1);
+  scale(s);
   strokeWeight(2);
   stroke('white');
   fill('khaki');
