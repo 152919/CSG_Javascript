@@ -33,7 +33,7 @@ function draw() {
   }
 
   ellipse(width / 2,height / 2,100);
-  tekenJos(mouseX,mouseY,kleur);
+  text(mouseX,mouseY,kleur);
 }
 
 function tekenJos(x,y,kleur) {
